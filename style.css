@@ -73,3 +73,12 @@ nav {
 #about {
     clear: both;
 }
+
+#contact {
+    float: left;
+    top: 1000px;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
