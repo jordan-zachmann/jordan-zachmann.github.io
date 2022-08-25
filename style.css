@@ -10,30 +10,29 @@ a, a:visited, a:active {
     color: blue;
 }
 
-h1 {
-    color: ghostwhite;
-}
+
 
 h2 {
     padding: 1% 1% 0 0;
 }
 
 body { /*perhaps move styling from body to top class right after body*/
-    background: slategray;
+    background: #F4FBFE;
+    line-height: 1.4;
     margin: 0px 10px; 
     padding: 1%;  /* Maybe change to something else to space content in*/
     padding-top: 70px;
     width: 100%;
 }
 header {
-    background: #DAE3E7;
+    background: #E2EAED;
     position: relative;
     padding: 10px 0px;
     height: 500px;
     width: 100%;
 }
 nav {
-    background-color: lightslategray;
+    background-color: #F4FBFE;
     position: fixed;
     top: 0px;
     text-align: center;
@@ -52,8 +51,12 @@ nav {
     display: inline-block;
     width: auto auto;
     margin: 1px;
-    background: gray;
+    background: #E9E7E6;
     padding: 10px;
+}
+
+.links:hover {
+    background-color: #C2C2C2;
 }
 
 .profile-image-container {
