@@ -3,21 +3,27 @@
 }
 a:hover {
     text-decoration: underline;
+    color: #00C1FF;
 }
 
 a, a:visited, a:active {
     text-decoration: none;
-    color: blue;
 }
 
+a:visited:hover {
+    color: #B000B0;
+}
 
+a:visited {
+    color: #820D82;
+}
 
 h2 {
     padding: 1% 1% 0 0;
 }
 
 body { /*perhaps move styling from body to top class right after body*/
-    background: #F4FBFE;
+    background: #EBF1F3;
     line-height: 1.4;
     margin: 0px 10px; 
     padding: 1%;  /* Maybe change to something else to space content in*/
@@ -45,6 +51,15 @@ nav {
     padding: 0px 0px;
     text-align: center;
     float: none;
+}
+
+a.nav-links {
+    color: #0000FF;
+}
+
+a:hover.nav-links {
+    text-decoration: underline;
+    color: #0000FF;
 }
 
 .links {
