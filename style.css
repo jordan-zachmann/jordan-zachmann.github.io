@@ -117,3 +117,14 @@ figcaption {
     background-position: center right;
     padding: 20px 20px;
 }
+#single-media {
+    text-align: center;
+}
+
+video::-webkit-media-controls-volume-slider {
+    display:none;
+    }
+    
+video::-webkit-media-controls-mute-button {
+    display:none;
+    }
