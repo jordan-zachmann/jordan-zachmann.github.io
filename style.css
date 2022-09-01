@@ -100,3 +100,20 @@ a:hover.nav-links {
 html {
     scroll-padding-top: 60px;
 }
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: #EBF1F3;
+}
+.casitas-picture {
+    height: 308px;
+    left: 300px;
+    padding: 2px 2px;
+}
+.project-image {
+    width: 673px;
+    background-color: #1A1A1A;
+    background-position: center right;
+    padding: 20px 20px;
+}
