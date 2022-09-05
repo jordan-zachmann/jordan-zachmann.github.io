@@ -3,11 +3,13 @@
     <head>
         <link href="./style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/profile.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="assets/images/profile.jpg">
         <title>Jordan Zachmann | Portfolio</title>
     </head>
     <body>
-        <header class="header">
+        <header id="home" class="header">
             <nav>
                 <ul class="link-container">
                     <li class="links" onclick="location.href='#home';" style="cursor: pointer;"><a class="nav-links" href="#home">Home</a></li>
@@ -24,14 +26,14 @@
                 <img class="profile-image" src="assets/images/profile.jpg" alt="A picture of Jordan Zachmann" title="Thanks for visiting my page!">
             </figure>
             
-            <section id="home">
+            <section>
                 <h1>Jordan Zachmann</h1>
                 <h2>Physicist | Metrologist | Software Engineer | Data Analyst</h2>
             </section>
 
             <aside>
                 <section id="contact">
-                    <h2 class="heading">Contact Me</h2>
+                    <h2>Contact Me</h2>
                     <ul class="social">
                         <li><a href="https://www.linkedin.com/in/jordan-zachmann-a8577220a/">My LinkedIn</a></li>
                         <li><a href="https://github.com/jordan-zachmann">My GitHub</a></li>
@@ -46,7 +48,7 @@
                         </li>
                     </ul>
                     <br>
-                    <p>Note: this website is a work in progress. I am building it in my free time and it is my first project using html and css.<br>Last updated: Sep 1, 2022</p>
+                    <p>Note: this website is a work in progress. I am building it in my free time and it is my first project using html and css.<br>Last updated: Sep. 5, 2022</p>
                 </section>
                 
                 <section id="wip">
@@ -84,7 +86,7 @@
                         <span class="year">(Aug. 2021 - Present)</span>
                     </h3>
                     <ul class="desc">
-                        <li>Develop Windows applications and scripts for both internal and external use
+                        <li>Develop and maintain Windows applications and scripts for both internal and external use
                             <ul>
                                 <li>Automate inspection and manufacturing processes using robotics and computer software we create</li>
                                 <li>Improve work practices to shorten routine tasks from taking hours to minutes every day</li>
@@ -92,6 +94,13 @@
                         </li>
                         <li>Convert internal data storage from Excel-based to SQL-based tables, then manage those databases</li>
                         <li>Facilitate and guide research efforts regarding accuracy of CT scanners in metrology</li>
+                    </ul>
+                    <h4 id="key-achievements">Key Achievements</h4>
+                    <ul class="desc">
+                        <li>Created a simulation of a machining factory as my first project using C#, allowing customers to see how changing parameters in their workflow can 
+                            affect their accuracy and repeatability on various parts
+                        </li>
+                        <li>Catalyzed the practice of no data storage → storage in Excel → storage in SQL/SQLite databases</li>
                     </ul>
                 </div>
 
@@ -115,18 +124,17 @@
                     <figure class="project-image">
                         <img class="casitas-picture" src="assets/images/Casitas2017.jpg" alt="A picture of Lake Casitas in 2017">
                         <img class="casitas-picture" src="assets/images/Casitas2019.jpg" alt="A picture of Lake Casitas in 2019">
-                        <figcaption>Images of Lake Casitas. The first satellite image shown was taken in 2017, second image in 2019. Notice the difference in water levels.</figcaption>
-                    </figure>
-                    <figure id="single-media" class="project-image">
                         <img  class="casitas-picture" src="assets/images/spm.png" alt="A picture of Lake Casitas' Suspended Particulate Matter">
-                        <figcaption>The suspended particulate matter (SPM) concentration of Lake Casitas taken in 2014.</figcaption>
+                        <figcaption>Images of Lake Casitas. The first satellite image shown was taken in 2017, second image in 2019. Notice the difference in water levels.<br>
+                        The third image represents the suspended particulate matter (SPM) concentration of Lake Casitas taken in 2014.</figcaption>
                     </figure>
-                    <figure id="single-media" class="project-image">
-                        <video height="500" width="500" muted autoplay controls>
+
+                    <figure id="nasa-vid" class="project-image single-media">
+                        <video height="500" width="500" muted controls>
                             <source src="assets/videos/cali_video.MOV" alt="A video of us flying over California." type="video/mp4">
                             Your browser does not support HTML5 video.
                         </video>
-                        <figcaption>A video I took while flying in a NASA DC-8 aircraft, collecting data.</figcaption>
+                        <figcaption>A video I took while flying in a NASA DC-8 aircraft, collecting atmospheric data (O3 levels, CH4 concentrations, etc).</figcaption>
                     </figure>
                 </div>
 
@@ -134,7 +142,7 @@
                     <h3 class="title">
                         Atmospheric Researcher - 
                         <span class="company">
-                            <a href="https://www.csbsju.edu/about/saint-johns-university">Saint John's University</a> | Colleville, MN
+                            <a href="https://www.csbsju.edu/about/saint-johns-university">Saint John's University</a> | Collegeville, MN
                         </span>
                         <span class="year">(May 2019 - Aug. 2019)</span>
                     </h3>
@@ -216,28 +224,40 @@
 
             <section id="hobbies">
                 <h2 class="heading">Hobbies</h2>
-                <ul class="hobbies">
-                    <li>Music</li> <!-- maybe turn each list element into <h3>s with <p> tags -->
-                    <li>Power Lifting</li>
-                    <li>Brewery Hopping</li>
-                    <li>Cooking</li>
-                    <li>Video and Board Games</li>
-                </ul>
+                <div class="music">
+                    <h3 class="hobbies">Music</h3>
+                    <figure class="project-image">
+                        <img class="media-picture" src="assets/images/donations.jpg" alt="Image of a band.">
+                        <img class="media-picture" src="assets/images/Pines_Concert.JPEG" alt="Image from College of Saint Benedict and Saint John's University's Pines Concert.">
+                        <figcaption>Images from my various performances. The first picture is from my old band "The Donations", where we donated food given to us at our shows to the local food shelter. 
+                            The second picture is of another band I was in, at the end of our opening set for the band <a class="black-background" href="https://youtu.be/X5G9tIe84lE?t=27">Neon Trees</a></figcaption>
+                    </figure>
+                    <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/y9gUqWZI2uY" width="640" height="360" frameborder="0" allow="fullscreen;"></iframe>
+                </div>
+                <div class="lifting">
+                    <h3 class="hobbies">Amateur Power Lifting</h3>
+                </div>
+                <div class="brewery">
+                    <h3 class="hobbies">Brewery Hopping</h3>
+                </div>
+                <div class="cooking">
+                    <h3 class="hobbies">Cooking</h3>
+                </div>
             </section>
             
             <section id="skills">
                 <h2 class="heading">Skills</h2>
                 <ul class="skills">
-                    <li>Programming Languages
+                    <li>Programming Languages → How I've used them
                         <ul>
-                            <li>C# - I use this for creating Windows applications</li>
-                            <li>Python - data analysis and visualization</li>
-                            <li>R - data analysis and visualization</li>
-                            <li>SQL - database storage and structure</li>
-                            <li>Excel/VBA - automating workplace Excel tasks</li>
-                            <li>Mathematica - data visualization</li>
-                            <li>LabVIEW - data collection automation</li>
-                            <li>HTML/CSS - creating this website!</li>
+                            <li>C# → creating Windows applications</li>
+                            <li>Python → data analysis and visualization</li>
+                            <li>R → data analysis and visualization</li>
+                            <li>SQL → database structure and storage</li>
+                            <li>Excel/VBA → automating workplace Excel tasks</li>
+                            <li>Mathematica → data visualization</li>
+                            <li>LabVIEW → data collection automation</li>
+                            <li>HTML/CSS → creating this website!</li>
                         </ul>
                     </li>
                     <li>Laboratory Equipment Used
@@ -246,6 +266,7 @@
                             <li>Shop equipment (e.g. welders, solders, power tools)</li>
                         </ul>
                     </li>
+                    <br>
                 </ul>
             </section>
 
