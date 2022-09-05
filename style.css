@@ -1,41 +1,21 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-padding-top: 60px;    
+}
 a:hover {
     text-decoration: underline;
     color: #00C1FF;
 }
-
 a, a:visited, a:active {
     text-decoration: none;
 }
-
 a:visited:hover {
     color: #B000B0;
 }
-
 a:visited {
     color: #820D82;
-}
-
-h2 {
-    padding: 1% 1% 0 0;
-}
-
-body { /*perhaps move styling from body to top class right after body*/
-    background: #EBF1F3;
-    line-height: 1.4;
-    margin: 0px 10px; 
-    padding: 1%;  /* Maybe change to something else to space content in*/
-    padding-top: 70px;
-    width: 100%;
-}
-header {
-    background: #E2EAED;
-    position: relative;
-    padding: 10px 0px;
-    height: 500px;
-    width: 100%;
 }
 nav {
     background-color: #F4FBFE;
@@ -46,22 +26,18 @@ nav {
     width: 100%;
     z-index: 1;
 }
-
 .link-container {
     padding: 0px 0px;
     text-align: center;
     float: none;
 }
-
 a.nav-links {
     color: #0000FF;
 }
-
 a:hover.nav-links {
     text-decoration: underline;
     color: #0000FF;
 }
-
 .links {
     display: inline-block;
     width: auto auto;
@@ -69,9 +45,45 @@ a:hover.nav-links {
     background: #E9E7E6;
     padding: 10px;
 }
-
 .links:hover {
     background-color: #C2C2C2;
+}
+
+body { /*perhaps move styling from body to top class right after body*/
+    background: #EBF1F3;
+    line-height: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding: 0%;  /* Maybe change to something else to space content in*/
+    padding-top: 70px;
+    width: 100%;
+
+}
+main {
+    text-align: left;
+    width: 62%;
+    margin: 0 auto;
+}
+header {
+    background: #E2EAED;
+    position: relative;
+    padding: 10px 0px;
+    height: 500px;
+    width: 100%;
+}
+h3 {
+    line-height: 1em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+#key-achievements {
+    margin-block-start: -0.5em;
+    margin-block-end: 0;
+}
+
+.desc {
+    margin-block-start: 0;
+    margin-block-end: 1em;
 }
 
 .profile-image-container {
@@ -87,7 +99,10 @@ a:hover.nav-links {
     width: auto;
     height: auto;
 }
-
+.heading {
+    text-align: left;
+    font-size: 1.8em;
+}
 #about {
     clear: both;
 }
@@ -97,34 +112,66 @@ a:hover.nav-links {
     top: 1000px;
 }
 
-html {
-    scroll-padding-top: 60px;
-}
-
 figcaption {
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
     color: #EBF1F3;
 }
 .casitas-picture {
     height: 308px;
-    left: 300px;
     padding: 2px 2px;
 }
 .project-image {
-    width: 673px;
+    width: 100%;
     background-color: #1A1A1A;
-    background-position: center right;
-    padding: 20px 20px;
-}
-#single-media {
+    /*background-position: center right;*/
+    padding: 18px 0px;
+    margin: 0;
+    margin-block-end: 0.5em;
     text-align: center;
 }
-
+.single-media {
+    text-align: center;
+    display: inline-block;
+}
+.double-media {
+    width: 100%;
+    display: inline-block;
+    background-color: #1A1A1A;
+    margin: 0;
+    /*background-position: center right;*/
+}
+.media-picture {
+    height: 500px;
+    padding: 5px 5px;
+}
+#nasa-vid {
+    margin-block-end: 2em;
+}
+.hobbies {
+    text-align: center;
+}
+.music {
+    position: relative;
+}
+a.black-background:visited:hover {
+    color: #D94ED9;
+}
+a.black-background:visited {
+    color: #BC2FBC;
+}
+a.black-background:hover {
+    color: #9BC3FF;
+}
+a.black-background {
+    color: #79AFFF
+}
+iframe {
+    position: relative;
+}
 video::-webkit-media-controls-volume-slider {
     display:none;
-    }
-    
+}
 video::-webkit-media-controls-mute-button {
     display:none;
-    }
+}
