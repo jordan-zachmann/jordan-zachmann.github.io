@@ -115,7 +115,7 @@ h3 {
 figcaption {
     font-size: 1em;
     text-align: center;
-    color: #EBF1F3;
+    
 }
 .casitas-picture {
     height: 308px;
@@ -123,7 +123,7 @@ figcaption {
 }
 .project-image {
     width: 100%;
-    background-color: #1A1A1A;
+    background-color: #E2EAED;
     /*background-position: center right;*/
     padding: 18px 0px;
     margin: 0;
@@ -137,7 +137,7 @@ figcaption {
 .double-media {
     width: 100%;
     display: inline-block;
-    background-color: #1A1A1A;
+    background-color: #E2EAED;
     margin: 0;
     /*background-position: center right;*/
 }
