@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 html {
-    scroll-padding-top: 60px;    
+    scroll-padding-top: 60px;
+    font-family: 'Helvetica', 'Arial', sans-serif;   
 }
 a:hover {
     text-decoration: underline;
@@ -49,15 +50,14 @@ a:hover.nav-links {
     background-color: #C2C2C2;
 }
 
-body { /*perhaps move styling from body to top class right after body*/
+body {
     background: #EBF1F3;
     line-height: 1.4em;
     margin-top: 0px;
     margin-bottom: 0px; 
-    padding: 0%;  /* Maybe change to something else to space content in*/
     padding-top: 70px;
     width: 100%;
-
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 main {
     text-align: left;
@@ -168,6 +168,12 @@ a.black-background {
 }
 iframe {
     position: relative;
+    margin: 0 auto;
+    display: block;
+    margin-block-end: 0.5em;
+}
+#ytplayer {
+    margin-block-end: 2em;
 }
 video::-webkit-media-controls-volume-slider {
     display:none;
