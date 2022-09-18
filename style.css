@@ -100,8 +100,16 @@ h3 {
     height: auto;
 }
 .heading {
-    text-align: left;
+    text-align: center;
     font-size: 1.8em;
+    border: 2px solid black;
+    padding: 0.5em;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #about {
     clear: both;
@@ -110,6 +118,10 @@ h3 {
 #contact {
     float: left;
     top: 1000px;
+}
+
+.title {
+    font-size: 1.3em;
 }
 
 figcaption {
