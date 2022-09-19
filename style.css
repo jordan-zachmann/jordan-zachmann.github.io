@@ -110,13 +110,23 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
 }
 #about {
     clear: both;
 }
 
-#contact {
+#about-div {
+    margin-block-start: 0em;
+}
+#contact-container {
+    min-width: 10% ;
     float: left;
+    max-width: 50%;
+}
+
+#contact {
     top: 1000px;
 }
 
@@ -160,6 +170,19 @@ figcaption {
 #nasa-vid {
     margin-block-end: 2em;
 }
+
+.university-container {
+    display: flex;
+}
+.university {
+    flex: 100%;
+}
+#university-date {
+    text-align: right;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
 .hobbies {
     text-align: center;
 }
