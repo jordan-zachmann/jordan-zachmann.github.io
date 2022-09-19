@@ -31,7 +31,7 @@
                 <h2>Physicist | Metrologist | Software Engineer | Data Analyst</h2>
             </section>
 
-            <aside>
+            <aside id="contact-container">
                 <section id="contact">
                     <h2>Contact Me</h2>
                     <ul class="social">
@@ -48,18 +48,15 @@
                         </li>
                     </ul>
                     <br>
-                    <p>Note: this website is a work in progress. I am building it in my free time and it is my first project using html and css.<br>Last updated: Sep. 12, 2022</p>
+                    <p>Note: this website is a work in progress (my apologies for now if you're viewing via mobile device). I am building it in my free time and it is my first project using html and css.<br>Last updated: Sep. 18, 2022</p>
                 </section>
                 
-                <section id="wip">
-                    
-                </section>
             </aside>
             
         </header>
         <main>
             <section id="about">
-                <div class="heading-container">
+                <div id="about-div" class="heading-container">
                     <h2 class="heading">About Me</h2>
                 </div>
 
@@ -221,8 +218,11 @@
                     <h2 class="heading">Education</h2>
                 </div>
                 
-                <h3 class="title">BA Physics</h3>
-                <h4 class="university">Saint John's University (2017 - 2021)</h4>
+                <div class="university-container">
+                    <h3 class="title university">Saint John's University</h3>
+                    <h4 id="university-date" class="university">2017 - 2021</h4>
+                </div>
+                
                 <ul class="education">
                     <li>Physics Club President and Treasurer</li>
                     <li>Engineering Club Officer</li>
@@ -253,13 +253,15 @@
                     <figure class="project-image">
                         <img class="media-picture" src="assets/images/mac_and_cheese.JPG" alt="Image of macaroni and cheese.">
                         <img class="media-picture" src="assets/images/jambalaya.JPG" alt="Image of jambalaya.">
-                        <img class="media-picture" src="assets/images/smoked_cheese.jpg" alt="Image of various cheeses.">
                     </figure>
                 </div>
             </section>
             
             <section id="skills">
-                <h2 class="heading">Skills</h2>
+                <div class="heading-container">
+                    <h2 class="heading">Skills</h2>
+                </div>
+                
                 <ul class="skills">
                     <li>Programming Languages → How I've used them
                         <ul>
