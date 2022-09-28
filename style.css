@@ -18,7 +18,7 @@ a:visited:hover {
 a:visited {
     color: #820D82;
 }
-nav {
+.top-navbar {
     background-color: #F4FBFE;
     position: fixed;
     top: 0px;
@@ -51,7 +51,7 @@ a:hover.nav-links {
     background-color: #C2C2C2;
 }
 
-body {
+.body {
     background: #EBF1F3;
     line-height: 1.4rem;
     margin-top: 0px;
@@ -60,18 +60,18 @@ body {
     width: 100%;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
-main {
+.main {
     text-align: left;
     width: 62%;
     margin: 0 auto;
 }
-header {
+/* .header {
     background: #E2EAED;
     position: relative;
     padding: 10px 0px;
     height: 500px;
     width: 100%;
-}
+} */
 h3 {
     line-height: 1rem;
     margin-block-start: 0.5rem;
@@ -88,17 +88,25 @@ h3 {
 }
 
 .profile-image-container {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     object-fit: cover;
-    height: 448px;
-    width: 336px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    margin-top: 1rem;
 }
 
 .profile-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 336px; 
+    max-height: 448px;
     width: auto;
     height: auto;
+    /* display: block; */
+    /* display: flex; */
 }
 .heading {
     text-align: center;
@@ -132,6 +140,10 @@ h3 {
     top: 1000px;
 }
 
+#work-experience {
+    margin: 1rem;
+    margin-top: 0rem;
+}
 .title {
     font-size: 1.3rem;
     line-height: 1.5rem;
@@ -220,4 +232,151 @@ video::-webkit-media-controls-volume-slider {
 }
 video::-webkit-media-controls-mute-button {
     display:none;
+}
+
+/* New index page (landing page) */
+
+.landing-body {
+    background: #EBF1F3;
+    line-height: 1.4rem;
+    width: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    height: 400px;
+
+    display: inline-grid;
+    /* grid-auto-columns: min-content; */
+    grid-template-areas: 
+        'header'
+        'content';
+    grid-template-columns: 100fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+.landing-content,
+.landing-header {
+    color: black;
+    padding: 100fr;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.landing-header {
+    grid-area: 'header';
+    justify-content: center;
+}
+
+.landing-content {
+    grid-area: 'content';
+    text-align: center;
+}
+
+.title-container {
+    text-align: center;
+}
+.portfolio-name {
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-family: 'Lato';
+}
+#my-name {
+    margin-block-end: 2rem;
+}
+.subtitle {
+    font-size: 1rem;
+}
+.socials {
+    display: inline-grid;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+.socials-inner {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+.logo-image {
+    text-align: left;
+    vertical-align: middle;
+    height: 1rem;
+    width: 1rem;
+    /* float: left; */
+}
+.social-item {
+    /* flex: 2 0 0%; */
+    padding: 0px 10px;
+    display: inline-block;
+    text-align: right;
+    font-size: 1rem;
+    /* margin: auto 0; */
+    /* float: left; */
+    /* overflow: hidden; */
+}
+
+#portfolio-word {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.landing-container {
+    margin-top: 2rem;
+}
+.landing-card-container {
+    /* display: grid;
+    gap: 8rem; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(autofill, minmax(100px, 1fr));
+    grid-template-areas: 
+        'card1 card2 card3';
+    grid-template-columns: 33fr;
+    grid-template-rows: 100fr; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.landing-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    transition: 0.2s;
+    border-radius: 5px;
+    flex: 1 1 0px;
+    align-items: stretch;
+    padding: 2px 16px;
+    max-width: 300px;
+    margin: 2rem;
+    
+}
+
+.landing-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* .landing-card2 { */
+    /* display: flex; */
+    /* text-align: center; */
+/* } */
+.landing-card-header {
+    display: flex;
+    text-align: center;
+    /* align-self: flex-end; */
+    /* display: inline-block; */
+}
+.card-image {
+    border-radius: 5px 5px 0 0;
+    margin: 3px;
+}
+
+a.landing-links {
+    color: black;;
+}
+a:hover.landing-links {
+    text-decoration: none;
+    color: #00C1FF;;
+}
+
+@media (max-width: 500px) {
+    .landing-card-container {
+        grid-template-columns: 1fr;
+    }
 }
