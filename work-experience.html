@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/profile.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="assets/images/profile.jpg">
+        <title>Jordan Zachmann | Work Experience</title>
+    </head>
+    <body class="body">
+        <header id="home" class="header">
+            <nav class="top-navbar">
+                <ul class="link-container">
+                    <li class="links" onclick="location.href='index.html';" style="cursor: pointer;"><a class="nav-links" href="index.html">Home</a></li>
+                    <li class="links" onclick="location.href='about-me.html';" style="cursor: pointer;"><a class="nav-links" href="about-me.html">About Me</a></li>
+                    <li class="links" onclick="location.href='about-me.html#hobbies';" style="cursor: pointer;"><a class="nav-links" href="about-me.html#hobbies">Hobbies</a></li>
+                    <li class="links" onclick="location.href='work-experience.html';" style="cursor: pointer;"><a class="nav-links" href="work-experience.html">Work Experience</a></li>
+                    <li class="links" onclick="location.href='work-experience.html#project';" style="cursor: pointer;"><a class="nav-links" href="work-experience.html#project">Projects</a></li>
+                    <li class="links" onclick="location.href='work-experience.html#education';" style="cursor: pointer;"><a class="nav-links" href="work-experience.html#education">Education</a></li>
+                    <li class="links" onclick="location.href='work-experience.html#skills';" style="cursor: pointer;"><a class="nav-links" href="work-experience.html#skills">Skills</a></li>
+                    <!-- <li class="links" onclick="location.href='about-me.html#contact';" style="cursor: pointer;"><a class="nav-links" href="about-me.html#contact">Contact</a></li> -->
+                </ul>
+            </nav>            
+        </header>
+        <main class="main">
+            <section id="experience">
+                <div id="work-experience" class="heading-container">
+                    <h2 class="heading">Work Experience</h2>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">
+                        Metrology Specialist - 
+                        <span class="company">
+                            <a href="https://www.gagesite.com/">Productivity Quality Inc.</a> | Plymouth, MN
+                        </span>
+                        <span class="year">(Aug. 2021 - Present)</span>
+                    </h3>
+                    <ul class="desc">
+                        <li>Develop and maintain Windows applications and scripts for both internal and external use
+                            <ul>
+                                <li>Automate inspection and manufacturing processes using robotics and computer software we create</li>
+                                <li>Improve work practices to shorten routine tasks from taking hours to minutes every day</li>
+                            </ul>
+                        </li>
+                        <li>Convert internal data storage from Excel-based to SQL-based tables, then manage those databases</li>
+                        <li>Facilitate and guide research efforts regarding accuracy of CT scanners in metrology</li>
+                    </ul>
+                    <h4 id="key-achievements">Key Achievements</h4>
+                    <ul class="desc">
+                        <li>Created a simulation of a machining facility, allowing customers to see how adjusting parameters in their
+                            workflow can affect their accuracy and repeatability on various parts</li>
+                        <li>Initiated and completed the changes in practice from no data storage → Excel-based storage → SQL/SQLite-based storage</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">
+                        Oceans/Water Researcher - 
+                        <span class="company">
+                            <a href="https://airbornescience.nasa.gov/content/Student_Airborne_Research_Program">Student Airborne Research Program (SARP)</a> | Palmdale, CA
+                        </span>
+                        <span class="year">(June 2020 - Aug. 2020)</span>
+                    </h3>
+                    <ul class="desc">
+                        <li>Investigated the effects of the Californian Thomas Fire on Lake Casitas
+                            <ul>
+                                <li>Researched how the fire impacted the lake's water area and sediment concentrations, even after the fire burned out</li>
+                            </ul>
+                        </li>
+                        <li>Applied remote sensing (GIS) techniques and technologies to analyze NASA satellite imagery</li>
+                        <li>Presented my discoveries to NASA researchers upon completing my work</li>
+                    </ul>
+                    <figure class="project-image">
+                        <img class="casitas-picture" src="assets/images/Casitas2017.jpg" alt="A picture of Lake Casitas in 2017">
+                        <img class="casitas-picture" src="assets/images/Casitas2019.jpg" alt="A picture of Lake Casitas in 2019">
+                        <img  class="casitas-picture" src="assets/images/spm.png" alt="A picture of Lake Casitas' Suspended Particulate Matter">
+                        <figcaption>Images of Lake Casitas. The first satellite image shown was taken in 2017, second image in 2019. Notice the difference in water levels.<br>
+                        The third image represents the suspended particulate matter (SPM) concentration of Lake Casitas taken in 2014.</figcaption>
+                    </figure>
+
+                    <figure id="nasa-vid" class="project-image single-media">
+                        <video height="500" width="500" muted controls>
+                            <source src="assets/videos/cali_video.MOV" alt="A video of us flying over California." type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <figcaption>A video I took while flying in a NASA DC-8 aircraft, collecting atmospheric data (O3 levels, CH4 concentrations, etc).</figcaption>
+                    </figure>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">
+                        Atmospheric Researcher - 
+                        <span class="company">
+                            <a href="https://www.csbsju.edu/about/saint-johns-university">Saint John's University</a> | Collegeville, MN
+                        </span>
+                        <span class="year">(May 2019 - Aug. 2019)</span>
+                    </h3>
+                    <ul class="desc">
+                        <li>Studied aerosol concentrations in the atmosphere at Saint John's University
+                            <ul>
+                                <li>Programmed a particle swarm optimization (PSO) algorithm with my professor to model these concentrations</li>
+                                <li>Researched concentration trends seen through a several-day period, as well as how smoke from the west coast impacted MN's air</li>
+                            </ul>
+                        </li>
+                        <li>Utilized a sun photometer to collect data; wrote programs in C++ and Mathematica to manipulate and analyze them</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">
+                        Physics Tutor and Lab TA - 
+                        <span class="company">
+                            <a href="https://www.csbsju.edu/about/saint-johns-university">College of Saint Benedict and Saint John's University</a> | Colleville, MN
+                        </span>
+                        <span class="year">(Aug. 2018 - May 2021)</span>
+                    </h3>
+                    <ul class="desc">
+                        <li>Assisted students with homework assignments, both one-on-one and in groups</li>
+                        <li>Collaborated with professors in leading introductory laboratory classes</li>
+                        <li>Graded lab reports and made suggestions for future improvement</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="project">
+                <div class="heading-container">
+                    <h2 class="heading">Projects</h2>
+                </div>
+                <div class="item">
+                    <h3 class="title">
+                        Cosmology Researcher - 
+                        <span class="company">
+                            <a href="https://www.csbsju.edu/about/saint-johns-university">Saint John's University</a> | Collegeville, MN
+                        </span>
+                        <span class="year">(Aug. 2020 - May 2021)</span>
+                    </h3>
+                    <ul class="desc">
+                        <li>Collected data on variable, anomalous Cepheid TYC 1031 1262 1 using our telescope for my senior thesis</li>
+                        <li>Analyzed and compared data with past measurements to searchfor trends using programs such as Xephem, Gaia, and scripts in R</li>
+                        <li>Presented our results to the Physics Department upon completion</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">
+                        Citizen Researcher - 
+                        <span class="company">
+                            <a href="https://csu-ceams.com/">NASA Citizen-Enabled Aerosol Measurement for Satellites (CEAMS)</a> | Montgomery, MN
+                        </span>
+                        <span class="year">(June 2020 - Aug. 2020)</span>
+                    </h3>
+                    <div class="proj_item">
+                        <p>The CEAMS team created this project to allow citizens to help calibrate aerosol optical depth
+                            measurements taken by satellites. The team provided participants with an
+                            Aerosol Mass and Optical Depth sampler to place in our yards, which
+                            took measurements every twenty minutes for ten weeks. An article detailing
+                            our work can be found <a href="https://csu-ceams.com/blog/looking-into-data-summer-2020/">here</a>.</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="education">
+                <div class="heading-container">
+                    <h2 class="heading">Education</h2>
+                </div>
+                
+                <div class="university-container">
+                    <h3 class="title left-align">Saint John's University</h3>
+                    <h3 id="university-date">2017 - 2021<br>Collegeville, MN</h3>
+                </div>
+                
+                <div class="proj_item education">
+                    <p>Physics Club President (2 years) and Treasurer (1 year), Engineering Club Officer (2 years), Wind Ensemble Tuba Section Leader (4 years), Top Physics Senior Thesis Awardee</p>
+                </div>
+                
+            </section>
+            
+            <section id="skills">
+                <div class="heading-container">
+                    <h2 class="heading">Skills</h2>
+                </div>
+                
+                <ul class="skills">
+                    <li>Programming Languages → How I've used them
+                        <ul>
+                            <li>C# → creating Windows applications</li>
+                            <li>Python → data analysis and visualization</li>
+                            <li>R → data analysis and visualization</li>
+                            <li>SQL → database structure and storage</li>
+                            <li>Excel/VBA → automating workplace Excel tasks</li>
+                            <li>Mathematica → data visualization</li>
+                            <li>LabVIEW → data collection automation</li>
+                            <li>HTML/CSS → creating this website!</li>
+                        </ul>
+                    </li>
+                    <li>Laboratory Equipment Used
+                        <ul>
+                            <li>Telescopes, sun photometers, pulse lasers, oscilloscopes, function generators</li>
+                            <li>Shop equipment (e.g. welders, solders, power tools)</li>
+                        </ul>
+                    </li>
+                    <br>
+                </ul>
+            </section>
+
+        </main>
+        
+        
+        
+
+    </body>
+</html>
