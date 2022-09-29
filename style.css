@@ -141,6 +141,9 @@ h3 {
     font-size: 1.3rem;
     line-height: 1.5rem;
 }
+.item {
+    margin-block-start: 2rem;
+}
 
 .casitas-picture {
     height: 308px;
@@ -150,9 +153,11 @@ h3 {
     width: 100%;
     background-color: #E2EAED;
     text-align: center;
+    margin: auto 0px;
 }
 .image-caption {
     padding: 0rem 0.5rem;
+    padding-bottom: 0.5rem;
     font-size: 1rem;
     text-align: center;
 }
