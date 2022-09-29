@@ -142,37 +142,35 @@ h3 {
     line-height: 1.5rem;
 }
 
-figcaption {
-    font-size: 1rem;
-    text-align: center;
-    
-}
 .casitas-picture {
     height: 308px;
     padding: 2px 2px;
 }
-.project-image {
+.figure-container {
     width: 100%;
     background-color: #E2EAED;
-
-    padding: 18px 0px;
-    margin: 0;
-    margin-block-end: 0.5rem;
     text-align: center;
+}
+.image-caption {
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.images-container {
+    display: flex;
+    padding: 1rem 0rem;
+    margin: 0rem;
+    margin-block-end: 0.3rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .single-media {
     text-align: center;
     display: inline-block;
 }
-.double-media {
-    width: 100%;
-    display: inline-block;
-    background-color: #E2EAED;
-    margin: 0;
-
-}
-.media-picture {
+.media-image {
     height: 500px;
+    width: auto;
     padding: 5px 5px;
 }
 #nasa-vid {
