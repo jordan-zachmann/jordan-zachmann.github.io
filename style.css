@@ -369,7 +369,8 @@ a:hover.landing-links {
 
     }
     .media-image {
-        height: 300px;
+        height: auto;
+        max-height: 400px;
         width: auto;
         padding: 5px 5px;
     }
@@ -383,7 +384,8 @@ a:hover.landing-links {
         padding: 0.4rem 0rem 0.5rem 0rem;
     }
     #asas-plot {
-        height: 190px;
+        max-height: 280px;
+        height: auto;
         width: auto;
     }
     ul {
