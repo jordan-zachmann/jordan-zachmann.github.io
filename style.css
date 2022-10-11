@@ -201,7 +201,9 @@ h3 {
 .music {
     position: relative;
 }
-
+.food-pic {
+    padding-bottom: 0rem;
+}
 a.black-background:visited:hover {
     color: #D94ED9;
 }
